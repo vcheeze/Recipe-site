@@ -1,0 +1,9 @@
+@font-face {
+	font-family: primeFont;
+	src: url(css/PrimeRegular.otf);
+}
+
+body {
+	text-align: center;
+	font-family: primeFont, sans-serif;
+}

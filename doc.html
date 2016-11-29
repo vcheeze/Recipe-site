@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Documententation</title>
+	<link rel="stylesheet" href="docstyle.css">
+</head>
+<body>
+	<h1>Documentation</h1>
+		<h2>What I did</h2>
+			<p>My Recipe Website has a simple purpose. It serves to let users input an ingredient or multiple ingredients and look up possible dishes that they can make with what they have. For instance, if I have "bubble" (although I'm not sure what kind of ingredient this is) and "tea", I might be interested in knowing whether I can make bubble tea.</p>
+		<h2>Why I did it</h2>
+			<p>My girlfriend is studying abroad right now...and she has to cook for herself. So when I asked her for some ideas, she suggested this. I was looking for something that would be useful, so I really took to the idea.</p>
+		<h2>How I did it</h2>
+			<p>I started out with some ideas in mind. The webiste would be a one-page landing site. I would have the search bar very conspicuously positioned, so that the user knows clearly that he or she must start by typing something in. I've succesfully created some SVG animation for the search bar that automatically runs when the pages loads, but I haven't put it on this current version yet because some details still need to be tweaked when the search happens.</p>
+			<p>After having a rough idea of what the website would look like, I set about looking for a background. That wasn't too hard.</p>
+			<p>The most challenging part was finding a suitable API. I needed one that allowed recipe search by ingredient(s). Ideally, the API will give me the recipe information, and not just the link to the recipe websites. It took a long time to find Spoonacular on Mashapes.com. Although it is limited to 50 calls/day for free users, it provided extensive data, including what I needed.</p>
+		<h2>Resources leveraged</h2>
+			<p><strong>Google.</strong>I Googled almost everything. From how to position something dead center on the page to how I can animate my search bar to become a fixed nav bar on the top of the page. Here's a link to <a href="https://google.com">Google.com</a> in case you've never used it before.</p>
+			<p>Some things I found were...</p>
+			<ul>
+				<li>
+					<p>How to make the search bar <a href="http://www.w3schools.com/howto/howto_css_animated_search.asp">expand</a>.</p>
+				</li>
+				<li>
+					<p>Creating a <a href="http://jordanhollinger.com/2014/01/29/css-gaussian-blur-behind-a-translucent-box/">translucent box</a> on the page.</p>
+				</li>
+				<li>
+					<p>I used a <a href="http://www.fontfabric.com/prime-free-font/">font</a> recommended by our good classmate Rick.</p>
+				</li>
+			</ul>
+			<p>I used websites like <a href="http://www.w3schools.com/">w3schools</a> and <a href="http://jquery.com/">jQuery.com</a> extensively.</p>
+		<h2>Major challenges/realizations</h2>
+			<p>My main challenge came from the asynchronous nature of AJAX. I had to ensure that certain chunks of my JavaScript executed only after certain AJAX calls happened. Also, I had to bind certain calls in order to create an array that has the information in the right order. Dealing with these were tough, and the only solution I found was to pollute the global scope a bit and create some variables outside of functions so that I can keep count on when and how many times a call is happening.</p>
+			<p>A challenge I am still struggling with is how I can display the recipes as image and titles after a search is entered. I am trying to figure out a good grid layout for the images so that they can be clearly seen. Ideally, I also want to display the recipe information on my own website instead of linking to an external one. But that is work for some other time.</p>
+		<h2>Feedback received</h2>
+			<p>Some suggestions included...</p>
+			<ul>
+				<li>
+					<p>Changing the search bar so that the text is aligned in the center.</p>
+				</li>
+				<li>
+					<p><i>Change the background to a video?</i></p>
+					<p>Well, the problem is, I have not found a satisfactory video yet.</p>
+				</li>
+				<li>
+					<p>Changing the image layout to be more aesthetically pleasing (working on it...working on it...)</p>
+				</li>
+				<li>
+					<p><i>How did you find the background??</i></p>
+					<p>To which I reply, "I just <a href="https://google.com">Googled</a> it."</p>
+				</li>
+				<li>
+					<p>After the search bar becomes the nav bar, the "What can I make with..." should maintain a larger font size (sometimes it's not about getting the right prescription with your glasses).</p>
+				</li>
+				
+			</ul>
+		<h2>Lessons learned</h2>
+			<p>Better planning makes the actual working process much easier. Think through what you are going to do first. And then test everything out and make mistakes and fix them and continue to build on your website.</p>
+</body>
+</html>
